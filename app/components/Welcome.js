@@ -1,11 +1,29 @@
 "use client";
 
-import { Box, Heading, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 export default function Welcome() {
   return (
-    <Box marginX={"63px"} filter={"auto"} blur={"2px"}>
-      <Image src="http://unsplash.it/1312/290" alt="dummy" />
-    </Box>
+    <Flex
+      h={"40vh"}
+      ml={"63px"}
+      mr={"63px"}
+      bgImage="url('/welcome.jpeg')"
+      bgSize={"cover"}
+      bgPos={"center"}
+      borderRadius={"lg"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      flexDir={"column"}
+    >
+      <Box>
+        <Heading>Play your deucational world journey with</Heading>
+      </Box>
+      <Box>
+        <Text fontSize={"x-large"}>
+          Discover educational destinations worldwide!
+        </Text>
+      </Box>
+    </Flex>
   );
 }
